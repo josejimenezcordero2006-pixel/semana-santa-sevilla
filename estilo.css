@@ -319,3 +319,61 @@ main h2 {
 .tabla-recorrido tr:hover {
     background: #e9ddff;
 }
+
+.foto-cristo.centrada img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fotos-hermandad {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CONTENEDOR GENERAL DE LA CENA */
+.cena-fotos {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* FILA SUPERIOR: DOS IMÁGENES LADO A LADO */
+.cena-fotos .fila-superior {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.cena-fotos .fila-superior div {
+    width: 50%;
+}
+
+.cena-fotos .fila-superior img {
+    width: 100%;
+    height: 350px; /* puedes ajustar a 300 o 400 */
+    object-fit: cover; /* recorta sin deformar */
+    border-radius: 10px;
+}
+
+/* FILA INFERIOR: PALIO CENTRADO */
+/* Fila inferior: palio centrado de verdad */
+.cena-fotos .fila-inferior {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cena-fotos .fila-inferior .foto-palio {
+    width: 70%; /* ajustable: 60–80% */
+}
+
+.cena-fotos .fila-inferior .foto-palio img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
