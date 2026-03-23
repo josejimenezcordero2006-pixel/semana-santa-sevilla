@@ -19,8 +19,18 @@
 
 <main>
 
+    <!-- FOTOS PRINCIPALES -->
+    <section class="fotos-hermandad">
+        <div class="foto-cristo">
+            <img src="../img/gran poder paso.jpg" alt="Cristo del Gran Poder">
+        </div>
+        <div class="foto-palio">
+            <img src="../img/paso palio gran poder.jpg" alt="Virgen del Mayor Dolor y Traspaso">
+        </div>
+    </section>
+
     <!-- INTRO -->
-    <section class="card-intro">
+    <section class="hermandad-bloque">
         <h2>Información General</h2>
         <p><strong>Nombre completo:</strong> Pontificia y Real Hermandad y Cofradía de Nazarenos de Nuestro Padre Jesús del Gran Poder</p>
         <p><strong>Templo:</strong> Basílica de Jesús del Gran Poder</p>
@@ -28,103 +38,117 @@
         <p><strong>Iconografía:</strong> Señor del Gran Poder · Virgen del Mayor Dolor y Traspaso</p>
     </section>
 
-    <!-- HORARIOS COMPLETOS -->
-    <section class="hermandad-card">
+    <!-- HORARIOS -->
+    <section class="hermandad-bloque">
         <h2>Horarios Oficiales 2026</h2>
 
-        <div class="hermandad-grid">
+        <div class="horarios-grid">
 
-            <div>
-                <div class="hermandad-item-titulo">Cruz de Guía</div>
-                <div class="hermandad-item-texto">01:00</div>
+            <div class="horario-item">
+                <span>Cruz de Guía</span>
+                <strong>00:35</strong>
             </div>
 
-            <div>
-                <div class="hermandad-item-titulo">Salida del Señor</div>
-                <div class="hermandad-item-texto">01:35</div>
+            <div class="horario-item">
+                <span>Salida del 2º Paso</span>
+                <strong>01:55</strong>
             </div>
 
-            <div>
-                <div class="hermandad-item-titulo">Salida de la Virgen</div>
-                <div class="hermandad-item-texto">02:05</div>
+            <div class="horario-item">
+                <span>Campana (Cruz de Guía)</span>
+                <strong>01:39</strong>
             </div>
 
-            <div>
-                <div class="hermandad-item-titulo">Entrada en Campana</div>
-                <div class="hermandad-item-texto">03:30</div>
+            <div class="horario-item">
+                <span>Campana (2º Paso)</span>
+                <strong>02:50</strong>
             </div>
 
-            <div>
-                <div class="hermandad-item-titulo">Catedral (Puerta de Palos)</div>
-                <div class="hermandad-item-texto">04:20</div>
+            <div class="horario-item">
+                <span>Puerta de Palos</span>
+                <strong>03:04</strong>
             </div>
 
-            <div>
-                <div class="hermandad-item-titulo">Salida de Catedral</div>
-                <div class="hermandad-item-texto">05:00</div>
+            <div class="horario-item">
+                <span>Puerta de Palos (2º Paso)</span>
+                <strong>04:15</strong>
             </div>
 
-            <div>
-                <div class="hermandad-item-titulo">Entrada del Señor</div>
-                <div class="hermandad-item-texto">08:00</div>
+            <div class="horario-item">
+                <span>Entrada (Cruz de Guía)</span>
+                <strong>06:15</strong>
             </div>
 
-            <div>
-                <div class="hermandad-item-titulo">Entrada de la Virgen</div>
-                <div class="hermandad-item-texto">08:30</div>
+            <div class="horario-item">
+                <span>Entrada (2º Paso)</span>
+                <strong>07:45</strong>
             </div>
 
         </div>
     </section>
 
-    <!-- RECORRIDO COMPLETO -->
-    <section class="hermandad-card">
+    <!-- RECORRIDO COMPLETO (TABLA) -->
+    <section class="hermandad-bloque">
         <h2>Recorrido Completo 2026</h2>
 
-        <p class="hermandad-item-texto">
-            <strong>Salida:</strong> Basílica del Gran Poder (01:00)
-        </p>
+        <table class="tabla-recorrido">
+            <thead>
+                <tr>
+                    <th>Horario</th>
+                    <th>Cruz de Guía</th>
+                    <th>2º Paso</th>
+                </tr>
+            </thead>
 
-        <p class="hermandad-item-texto">
-            Plaza de San Lorenzo → Conde de Barajas → Trajano → Plaza del Duque →
-            Campana (03:30) → Sierpes → Plaza San Francisco → Avenida de la Constitución →
-            Catedral (04:20) → Puerta de Palos → Patio de los Naranjos →
-            Alemanes → Hernando Colón → Plaza San Francisco → Sierpes →
-            Campana → Martín Villa → Laraña → Orfila → Javier Lasso de la Vega →
-            Amor de Dios → San Miguel → Plaza del Museo → Alfonso XII →
-            Plaza de San Lorenzo → Basílica del Gran Poder (08:30)
-        </p>
+            <tbody>
+                <tr><td>00:30</td><td>Salida (00:35)</td><td></td></tr>
+                <tr><td>01:00</td><td>Jesús del Gran Poder</td><td></td></tr>
+                <tr><td>01:30</td><td>CAMPANA (01:39)</td><td>Salida (01:55)</td></tr>
+                <tr><td>02:00</td><td>PLAZA (02:19)</td><td>Jesús del Gran Poder</td></tr>
+                <tr><td>02:30</td><td>P. SAN MIGUEL (02:45)</td><td>CAMPANA (02:50)</td></tr>
+                <tr><td>03:00</td><td>PALOS (03:04)</td><td>PLAZA (03:30)</td></tr>
+                <tr><td>03:30</td><td>Arfe</td><td>P. SAN MIGUEL (03:56)</td></tr>
+                <tr><td>04:00</td><td>Santas Patronas</td><td>PALOS (04:15)</td></tr>
+                <tr><td>04:30</td><td>Gravina</td><td>Arfe</td></tr>
+                <tr><td>05:00</td><td>Pl. Museo</td><td>Santas Patronas</td></tr>
+                <tr><td>05:30</td><td>Entrada (06:15)</td><td>Gravina</td></tr>
+                <tr><td>06:00</td><td></td><td>Bailén</td></tr>
+                <tr><td>06:30</td><td></td><td>Pl. Museo</td></tr>
+                <tr><td>07:00</td><td></td><td>Cardenal Spínola</td></tr>
+                <tr><td>07:30</td><td></td><td>Entrada (07:45)</td></tr>
+            </tbody>
+        </table>
     </section>
 
     <!-- BANDAS -->
-    <section class="hermandad-card">
+    <section class="hermandad-bloque">
         <h2>Acompañamiento Musical</h2>
 
-        <div class="hermandad-grid">
-            <div>
-                <div class="hermandad-item-titulo">Cristo</div>
-                <div class="hermandad-item-texto">No lleva música</div>
+        <div class="horarios-grid">
+            <div class="horario-item">
+                <span>Cristo</span>
+                <strong>No lleva música</strong>
             </div>
 
-            <div>
-                <div class="hermandad-item-titulo">Virgen</div>
-                <div class="hermandad-item-texto">Banda de Música (pendiente confirmación 2026)</div>
+            <div class="horario-item">
+                <span>Virgen</span>
+                <strong>No lleva música</strong>
             </div>
         </div>
 
-        <p style="margin-top: 10px; font-size: 0.9rem; opacity: 0.8;">
+        <p class="nota">
             *El Señor del Gran Poder avanza en absoluto silencio, acompañado solo por el sonido de los pasos y la multitud.*
         </p>
     </section>
 
     <!-- CURIOSIDADES -->
-    <section class="hermandad-card">
+    <section class="hermandad-bloque">
         <h2>Curiosidades</h2>
 
-        <ul style="line-height: 1.6; padding-left: 20px;">
+        <ul class="lista-curiosidades">
             <li>Es conocido como “El Señor de Sevilla” por la enorme devoción popular que despierta.</li>
             <li>Su imagen, obra de Juan de Mesa (1620), es una de las más veneradas de Andalucía.</li>
-            <li>Es la hermandad con mayor número de nazarenos de la Madrugá.</li>
+            <li>Es una de las hermandades con mayor número de nazarenos de la Madrugá.</li>
             <li>El paso del Señor es uno de los más sobrios y elegantes de toda la Semana Santa.</li>
             <li>La Virgen del Mayor Dolor y Traspaso suele llevar un exorno floral muy clásico.</li>
             <li>El silencio que acompaña al Señor en su caminar es uno de los momentos más sobrecogedores de la noche.</li>

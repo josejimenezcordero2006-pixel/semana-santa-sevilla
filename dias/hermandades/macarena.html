@@ -19,8 +19,18 @@
 
 <main>
 
+    <!-- FOTOS PRINCIPALES -->
+    <section class="fotos-hermandad">
+        <div class="foto-cristo">
+            <img src="../img/paso cristo macarena.jpg" alt="Jesús de la Sentencia">
+        </div>
+        <div class="foto-palio">
+            <img src="../img/paso palio macarena.jpg" alt="Esperanza Macarena">
+        </div>
+    </section>
+
     <!-- INTRO -->
-    <section class="card-intro">
+    <section class="hermandad-bloque">
         <h2>Información General</h2>
         <p><strong>Nombre completo:</strong> Real, Ilustre y Fervorosa Hermandad y Cofradía de Nazarenos de Nuestro Padre Jesús de la Sentencia y María Santísima de la Esperanza Macarena</p>
         <p><strong>Templo:</strong> Basílica de la Macarena</p>
@@ -28,106 +38,132 @@
         <p><strong>Iconografía:</strong> Jesús de la Sentencia · Esperanza Macarena</p>
     </section>
 
-    <!-- HORARIOS COMPLETOS -->
-    <section class="hermandad-card">
+    <!-- HORARIOS -->
+    <section class="hermandad-bloque">
         <h2>Horarios Oficiales 2026</h2>
 
-        <div class="hermandad-grid">
+        <div class="horarios-grid">
 
-            <div>
-                <div class="hermandad-item-titulo">Cruz de Guía</div>
-                <div class="hermandad-item-texto">00:00</div>
+            <div class="horario-item">
+                <span>Cruz de Guía</span>
+                <strong>00:00</strong>
             </div>
 
-            <div>
-                <div class="hermandad-item-titulo">Salida del Señor</div>
-                <div class="hermandad-item-texto">00:45</div>
+            <div class="horario-item">
+                <span>Salida del 2º Paso</span>
+                <strong>01:40</strong>
             </div>
 
-            <div>
-                <div class="hermandad-item-titulo">Salida de la Virgen</div>
-                <div class="hermandad-item-texto">01:30</div>
+            <div class="horario-item">
+                <span>Campana (Cruz de Guía)</span>
+                <strong>02:50</strong>
             </div>
 
-            <div>
-                <div class="hermandad-item-titulo">Entrada en Campana</div>
-                <div class="hermandad-item-texto">04:10</div>
+            <div class="horario-item">
+                <span>Campana (2º Paso)</span>
+                <strong>04:38</strong>
             </div>
 
-            <div>
-                <div class="hermandad-item-titulo">Catedral (Puerta de Palos)</div>
-                <div class="hermandad-item-texto">05:20</div>
+            <div class="horario-item">
+                <span>Puerta de Palos (Cruz de Guía)</span>
+                <strong>04:15</strong>
             </div>
 
-            <div>
-                <div class="hermandad-item-titulo">Salida de Catedral</div>
-                <div class="hermandad-item-texto">06:10</div>
+            <div class="horario-item">
+                <span>Puerta de Palos (2º Paso)</span>
+                <strong>06:03</strong>
             </div>
 
-            <div>
-                <div class="hermandad-item-titulo">Entrada del Señor</div>
-                <div class="hermandad-item-texto">12:45</div>
+            <div class="horario-item">
+                <span>Entrada (Cruz de Guía)</span>
+                <strong>10:10</strong>
             </div>
 
-            <div>
-                <div class="hermandad-item-titulo">Entrada de la Virgen</div>
-                <div class="hermandad-item-texto">13:30</div>
+            <div class="horario-item">
+                <span>Entrada (2º Paso)</span>
+                <strong>13:30</strong>
             </div>
 
         </div>
     </section>
 
-    <!-- RECORRIDO COMPLETO -->
-    <section class="hermandad-card">
+    <!-- RECORRIDO COMPLETO (TABLA) -->
+    <section class="hermandad-bloque">
         <h2>Recorrido Completo 2026</h2>
 
-        <p class="hermandad-item-texto">
-            <strong>Salida:</strong> Basílica de la Macarena (00:00)
-        </p>
+        <table class="tabla-recorrido">
+            <thead>
+                <tr>
+                    <th>Horario</th>
+                    <th>Cruz de Guía</th>
+                    <th>2º Paso</th>
+                </tr>
+            </thead>
 
-        <p class="hermandad-item-texto">
-            Bécquer → Resolana → Feria → Correduría → Amor de Dios → Trajano →
-            Plaza del Duque → Campana (04:10) → Sierpes → Plaza San Francisco →
-            Avenida de la Constitución → Catedral (05:20) → Puerta de Palos →
-            Patio de los Naranjos → Alemanes → Hernando Colón →
-            Plaza San Francisco → Sierpes → Campana → Martín Villa →
-            Laraña → Imagen → Plaza de la Encarnación → Feria →
-            Resolana → Basílica de la Macarena (13:30)
-        </p>
+            <tbody>
+                <tr><td>00:00</td><td>Salida (00:00)</td><td></td></tr>
+                <tr><td>00:30</td><td>Resolana</td><td></td></tr>
+                <tr><td>01:00</td><td>Feria</td><td></td></tr>
+                <tr><td>01:30</td><td>Correduría</td><td>Salida (01:40)</td></tr>
+                <tr><td>02:00</td><td>Trajano</td><td>Resolana</td></tr>
+                <tr><td>02:30</td><td>CAMPANA (02:50)</td><td>Feria</td></tr>
+                <tr><td>03:00</td><td>PLAZA (03:30)</td><td>Correduría</td></tr>
+                <tr><td>03:30</td><td>P. SAN MIGUEL (03:56)</td><td>Trajano</td></tr>
+                <tr><td>04:00</td><td>PALOS (04:15)</td><td>Pl. Duque</td></tr>
+                <tr><td>04:30</td><td>Francos</td><td>CAMPANA (04:38)</td></tr>
+                <tr><td>05:00</td><td>Cuesta del Rosario</td><td>PLAZA (05:18)</td></tr>
+                <tr><td>05:30</td><td>Sales y Ferré</td><td>P. SAN MIGUEL (05:44)</td></tr>
+                <tr><td>06:00</td><td>Imagen</td><td>PALOS (06:03)</td></tr>
+                <tr><td>06:30</td><td>Santa Ángela de la Cruz</td><td>Alemanes</td></tr>
+                <tr><td>07:00</td><td>Feria</td><td>Francos</td></tr>
+                <tr><td>07:30</td><td>Feria</td><td>Villegas</td></tr>
+                <tr><td>08:00</td><td>Parras</td><td>Boteros</td></tr>
+                <tr><td>08:30</td><td>Muro</td><td>Santa Ángela de la Cruz</td></tr>
+                <tr><td>09:00</td><td>Resolana</td><td>Santa Ángela de la Cruz</td></tr>
+                <tr><td>09:30</td><td>Arco de la Macarena</td><td>Madre María Purísima</td></tr>
+                <tr><td>10:10</td><td>Entrada (10:10)</td><td>Feria</td></tr>
+                <tr><td>11:00</td><td></td><td>Feria</td></tr>
+                <tr><td>11:30</td><td></td><td>Parras</td></tr>
+                <tr><td>12:00</td><td></td><td>Muro</td></tr>
+                <tr><td>12:30</td><td></td><td>Resolana</td></tr>
+                <tr><td>13:00</td><td></td><td>Arco de la Macarena</td></tr>
+                <tr><td>13:30</td><td></td><td>Entrada (13:30)</td></tr>
+            </tbody>
+        </table>
     </section>
 
     <!-- BANDAS -->
-    <section class="hermandad-card">
+    <section class="hermandad-bloque">
         <h2>Acompañamiento Musical</h2>
 
-        <div class="hermandad-grid">
-            <div>
-                <div class="hermandad-item-titulo">Cristo</div>
-                <div class="hermandad-item-texto">Banda de Cornetas y Tambores de la Centuria Romana Macarena</div>
+        <div class="horarios-grid">
+            <div class="horario-item">
+                <span>Cristo</span>
+                <strong>Centuria Romana Macarena</strong>
             </div>
 
-            <div>
-                <div class="hermandad-item-titulo">Virgen</div>
-                <div class="hermandad-item-texto">Banda de Música (pendiente confirmación 2026)</div>
+            <div class="horario-item">
+                <span>Virgen</span>
+                <strong>Banda de Música Carmen de Salteras</strong>
             </div>
         </div>
 
-        <p style="margin-top: 10px; font-size: 0.9rem; opacity: 0.8;">
+        <p class="nota">
             *La Centuria Romana Macarena abre el cortejo con su característico sonido de cornetas.*
         </p>
     </section>
 
     <!-- CURIOSIDADES -->
-    <section class="hermandad-card">
+    <section class="hermandad-bloque">
         <h2>Curiosidades</h2>
 
-        <ul style="line-height: 1.6; padding-left: 20px;">
-            <li>Es una de las hermandades con mayor número de nazarenos de toda la Semana Santa.</li>
+        <ul class="lista-curiosidades">
+            <li>Es una de las hermandades con más nazarenos de toda la Semana Santa.</li>
             <li>La Esperanza Macarena es una de las imágenes más veneradas de España.</li>
             <li>La Centuria Romana Macarena es uno de los elementos más reconocibles de la Madrugá.</li>
-            <li>El paso de palio de la Virgen es uno de los más grandes y espectaculares de Sevilla.</li>
+            <li>El paso de palio es uno de los más grandes y espectaculares de Sevilla.</li>
+            <li>El regreso al Arco de la Macarena es uno de los momentos más emocionantes de la jornada.</li>
             <li>La Virgen suele llevar un exorno floral muy característico, con claveles blancos o rosas.</li>
-            <li>El regreso al barrio de la Macarena es uno de los momentos más emocionantes de la jornada.</li>
         </ul>
     </section>
 

@@ -1,163 +1,321 @@
-/* PALETA DE COLORES */
-:root {
-    --morado: #4b0082;
-    --morado-oscuro: #2e0050;
-    --blanco: #ffffff;
-    --gris-suave: #f5f5f5;
-    --sombra: 0 4px 15px rgba(0,0,0,0.2);
+/* =========================
+   ESTILOS GENERALES
+   ========================= */
+
+* {
+    box-sizing: border-box;
 }
 
-/* GENERAL */
 body {
-    font-family: "Segoe UI", sans-serif;
-    background: var(--gris-suave);
     margin: 0;
-    padding: 0;
-    color: var(--morado-oscuro);
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    color: #333;
 }
 
-/* CABECERA MEJORADA */
+main {
+    max-width: 1100px;
+    margin: 0 auto 40px auto;
+    padding: 0 15px 30px 15px;
+}
+
+/* =========================
+   CABECERA Y NAVEGACIÓN
+   ========================= */
+
 header {
-    background: linear-gradient(135deg, var(--morado), var(--morado-oscuro));
-    color: var(--blanco);
     text-align: center;
-    padding: 45px 20px;
-    border-bottom: 4px solid #ffffff33;
+    padding: 30px 10px;
+    background: #4b0082;
+    color: white;
 }
 
 header h1 {
     margin: 0;
-    font-size: 2.6rem;
-    letter-spacing: 1px;
-    font-weight: 700;
+    font-size: 2rem;
 }
 
 header p {
-    margin-top: 10px;
-    font-size: 1.2rem;
+    margin: 5px 0 0 0;
+    font-size: 1rem;
     opacity: 0.9;
 }
 
-/* NAVEGACIÓN */
 nav {
-    background: var(--morado-oscuro);
+    background: #eee;
     padding: 10px;
     text-align: center;
 }
 
 nav a {
-    color: var(--blanco);
+    color: #4b0082;
+    font-weight: bold;
     text-decoration: none;
     margin: 0 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* =========================
+   TÍTULOS DE SECCIÓN
+   ========================= */
+
+.titulo-seccion,
+main h2 {
+    text-align: center;
+    margin: 25px 0 15px 0;
+    color: #4b0082;
+}
+
+/* =========================
+   GRID DE HERMANDADES (LISTADO)
+   ========================= */
+
+.hermandades-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    padding: 20px 0 10px 0;
+}
+
+/* Tarjetas de selección de hermandad (Madrugá) */
+
+.hermandad-card-select {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+.hermandad-card-select img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.hermandad-card-select h3 {
+    margin: 15px 0 18px 0;
+    font-size: 1.3rem;
+    color: #4b0082;
     font-weight: bold;
 }
 
-/* CONTENIDO GENERAL */
-main {
-    max-width: 1000px;
-    margin: 40px auto;
-    padding: 0 20px;
+.hermandad-card-select:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
 }
 
-/* BLOQUE DE INTRODUCCIÓN */
+/* =========================
+   PÁGINAS INTERNAS DE HERMANDAD
+   ========================= */
+
+/* Tarjeta de introducción */
+
 .card-intro {
-    background: var(--blanco);
-    padding: 25px;
-    border-radius: 14px;
-    box-shadow: var(--sombra);
-    margin-bottom: 30px;
-    border-left: 6px solid var(--morado);
+    background: white;
+    border-radius: 12px;
+    padding: 18px 20px;
+    margin: 20px 0;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.12);
 }
 
 .card-intro h2 {
     margin-top: 0;
-    color: var(--morado);
-    font-size: 1.8rem;
+    color: #4b0082;
 }
 
-/* LISTA DE BOTONES (INDEX Y DÍAS) */
-.lista-hermandades {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    align-items: center;
+.card-intro p {
+    margin: 6px 0;
 }
 
-/* BOTONES GENERALES */
-.btn-hermandad {
-    display: block;
-    background: var(--morado);
-    color: var(--blanco);
-    padding: 15px 20px;
-    border-radius: 10px;
-    text-decoration: none;
-    font-size: 1.2rem;
-    font-weight: bold;
-    transition: 0.2s;
-    width: 100%;
-    max-width: 350px;
-    text-align: center;
-}
+/* Bloques de contenido (horarios, recorrido, bandas, curiosidades) */
 
-.btn-hermandad:hover {
-    background: var(--morado-oscuro);
-}
-
-/* TARJETAS DE HERMANDADES (PÁGINAS INDIVIDUALES) */
 .hermandad-card {
-    background: var(--blanco);
-    padding: 25px;
-    border-radius: 14px;
-    box-shadow: var(--sombra);
-    margin-bottom: 30px;
-    border-left: 6px solid var(--morado);
+    background: white;
+    border-radius: 12px;
+    padding: 18px 20px;
+    margin: 18px 0;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.12);
 }
 
 .hermandad-card h2 {
-    color: var(--morado);
-    margin-bottom: 10px;
+    margin-top: 0;
+    color: #4b0082;
 }
 
-.hermandad-card p {
-    margin: 6px 0;
-    line-height: 1.5;
-}
+/* Grid interno para horarios / bandas */
 
-/* GRID PARA HORARIOS Y DATOS */
 .hermandad-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: 15px;
+    margin-top: 10px;
 }
 
 .hermandad-item-titulo {
     font-weight: bold;
-    color: var(--morado-oscuro);
+    color: #4b0082;
+    margin-bottom: 3px;
 }
 
 .hermandad-item-texto {
-    color: #333;
+    font-size: 0.95rem;
 }
 
-/* TARJETAS DE LISTA (MADRUGÁ Y DÍAS) */
-.hermandad-item {
-    background: var(--blanco);
+/* Listas de curiosidades */
+
+.hermandad-card ul {
+    margin: 10px 0 0 0;
+    padding-left: 20px;
+}
+
+.hermandad-card li {
+    margin-bottom: 6px;
+}
+
+/* =========================
+   RESPONSIVE
+   ========================= */
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.7rem;
+    }
+
+    .hermandad-card-select img {
+        height: 160px;
+    }
+
+    main {
+        padding: 0 10px 25px 10px;
+    }
+}
+
+
+/* =========================
+   LISTA DE DÍAS (INDEX)
+   ========================= */
+
+.lista-dias {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.boton-dia {
+    display: block;
+    background: #4b0082;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.25s ease, transform 0.25s ease;
+}
+
+.boton-dia:hover {
+    background: #360061;
+    transform: translateY(-3px);
+}
+
+/* FOTOS CRISTO / PALIO */
+.fotos-hermandad {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin: 20px 0 30px 0;
+}
+
+.fotos-hermandad img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* BLOQUES GENERALES */
+.hermandad-bloque {
+    background: white;
     padding: 20px;
     border-radius: 12px;
-    box-shadow: var(--sombra);
-    text-align: center;
-    width: 100%;
-    max-width: 420px;
-    margin: 0 auto;
+    margin-bottom: 25px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.12);
 }
 
-/* IMÁGENES AJUSTADAS (SI LAS USAS EN OTRAS PÁGINAS) */
-.hermandad-item img {
-    width: 100%;
-    height: 220px;
-    object-fit: cover;
-    object-position: center;
+/* HORARIOS */
+.horarios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.horario-item {
+    background: #f7f2ff;
+    padding: 12px;
     border-radius: 10px;
-    box-shadow: var(--sombra);
-    margin-bottom: 15px;
+    text-align: center;
+}
+
+.horario-item span {
+    display: block;
+    font-size: 0.9rem;
+    color: #4b0082;
+}
+
+.horario-item strong {
+    font-size: 1.2rem;
+    color: #2b004f;
+}
+
+/* CURIOSIDADES */
+.lista-curiosidades li {
+    margin-bottom: 8px;
+}
+
+.nota {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+/* TABLA DE RECORRIDO */
+.tabla-recorrido {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    font-size: 0.95rem;
+}
+
+.tabla-recorrido th {
+    background: #4b0082;
+    color: white;
+    padding: 10px;
+    text-align: left;
+    font-size: 1rem;
+}
+
+.tabla-recorrido td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.tabla-recorrido tr:nth-child(even) {
+    background: #f7f2ff;
+}
+
+.tabla-recorrido tr:hover {
+    background: #e9ddff;
 }
